@@ -7,8 +7,6 @@ let todos = [
     { id: getId(), task: 'Read a book', isDone: false },
 ];
 
-const getID = () => todos.length ? Math.max(...todos.map(t => t.id)) + 1 : 1;
-
 const list = () => todos.map(t => ({ ...t }));
 
 const find = (id) => {

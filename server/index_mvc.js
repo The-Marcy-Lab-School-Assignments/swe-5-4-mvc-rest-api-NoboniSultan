@@ -12,9 +12,9 @@ app.use(logRoutes);
 app.use(express.static(path.join(__dirname, '../frontend/dist')));
 app.use(express.json());
 
-app.get('/api.todos', todoControllers.listTodos);
+app.get('/api/todos', todoControllers.listTodos);
 app.get('/api/todos/:id', todoControllers.findTodo);
-app.post('/api/todo', todoControllers.createTodo);
+app.post('/api/todos', todoControllers.createTodo);
 app.patch('/api/todos/:id', todoControllers.updateTodo);
 app.delete('/api/todos/:id', todoControllers.deleteTodo);
 
