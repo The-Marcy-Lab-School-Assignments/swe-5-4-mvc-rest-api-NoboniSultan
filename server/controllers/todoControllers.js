@@ -1,6 +1,6 @@
 const todoModel = require('../models/todoModel');
 
-const listTools = (req, res) => {
+const listTodos = (req, res) => {
     res.status(200).json(todoModel.list());
 };
 
@@ -32,4 +32,4 @@ const deleteTodo = (req, res) => {
     res.status(204).send();
 }
 
-module.exports = { listTools, findTodo, createTodo, updateTodo, deleteTodo };
+module.exports = { listTodos, findTodo, createTodo, updateTodo, deleteTodo };
