@@ -1,3 +1,6 @@
+let id = 1;
+const getId = () => id++;
+
 let todos = [
     { id: getId(), task: 'Buy groceries', isDone: false },
     { id: getId(), task: 'Walk the dog', isDone: true },
